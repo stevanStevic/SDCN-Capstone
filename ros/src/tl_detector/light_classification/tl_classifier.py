@@ -19,7 +19,7 @@ class TLClassifier(object):
         self.model_graph = None
         self.session = None
 
-        self.load_graph(os.path.dirname(os.path.realpath(__file__)) + self.config['model'])
+        self.load_graph(os.path.dirname(os.path.realpath(__file__)) + '/' + self.config['model'])
 
         self.classes = {1: TrafficLight.RED,
                 2: TrafficLight.YELLOW,
